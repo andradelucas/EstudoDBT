@@ -1,0 +1,12 @@
+default:
+  outputs:
+    dev:
+      type: redshift
+      host: default-workgroup.010928215067.us-east-1.redshift-serverless.amazonaws.com
+      user: admin
+      password: Lu122650paulo
+      port: 5439
+      dbname: northwind
+      schema: public
+      threads: 3
+  target: dev

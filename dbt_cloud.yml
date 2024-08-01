@@ -1,0 +1,14 @@
+version: "1"
+context:
+  active-host: "pl995.us1.dbt.com"
+  active-project: "70403103947870"
+projects:
+  - project-name: "Analytics"
+    project-id: "70403103947870"
+    account-name: "L.S.A"
+    account-id: "70403103940989"
+    account-host: "pl995.us1.dbt.com"
+    token-name: "cloud-cli-f517"
+    token-value: "dbtu_2WYpAac9-9pq--yCr0oedl0CKAIQj_Z7yeKu83VVGxbHR8yOYw"
+
+
