@@ -8,4 +8,4 @@ clean-targets:
 
 models:
   dbt_estudo:
-    +materialized: table
+    +materialized: view
