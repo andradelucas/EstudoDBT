@@ -1,1 +1,1 @@
-select * from "northwide"."public"."customers"
+select * from "northwind"."public"."customers"
