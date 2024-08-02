@@ -8,13 +8,4 @@ clean-targets:
 
 models:
   dbt_estudo:
-    materialized: view
-
-
-# autenticação nuvem
-nome: EstudoDBT
-versão: '1.0'
-... .
-nuvem dbt:
-    id do projeto: 70403103947870
-     api_token: dbtu_bt32GhUjcSaySOmOEaM9uV8izIlX930JjPpnFrH3fi82lf3_E4
+    +materialized: view
