@@ -11,4 +11,4 @@ From "northwind"."public"."customers"
     select * FROM "northwind"."public"."customers" where customer_id in (select result From removed)
 }
 
-select * from removed
+select * from final
