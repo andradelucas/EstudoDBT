@@ -8,19 +8,25 @@
     
     
   as (
-    WITH markup as {
-select *
-,first_value(customer_id) 
-over(partition by company_name, contact_name 
-order by company_name
-rows between unbounded preceding and unbounded following) as result
-From "northwind"."public"."customers"
-}, removed {
-    Select distinct result FROM markup
-}, final {
-    select * FROM "northwind"."public"."customers" where customer_id in (select result From removed)
-}
+    WITH markup AS (
+    SELECT *,
+           first_value(customer_id) 
+           OVER (PARTITION BY company_name, contact_name 
+                 ORDER BY company_name
+                 ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING) AS result
+    FROM "northwind"."public"."customers"
+), 
+removed AS (
+    SELECT DISTINCT result 
+    FROM markup
+), 
+final AS (
+    SELECT * 
+    FROM "northwind"."public"."customers" 
+    WHERE customer_id IN (SELECT result FROM removed)
+)
 
-select * from final
+SELECT * 
+FROM final
   );
   
