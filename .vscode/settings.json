@@ -1,5 +1,5 @@
 {
-    "dbt.enableNewLineagePanel": true,
+    "dbt.enableNewLineagePanel": false,
     "sqltools.connections": [
         {
             "previewLimit": 50,
