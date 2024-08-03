@@ -1,4 +1,14 @@
-WITH prod as (
+
+  
+    
+
+  create  table
+    "northwind"."dbt_landradeesilva"."joins__dbt_tmp"
+    
+    
+    
+  as (
+    WITH prod as (
 SELECT
 ct.category_name, sp.company_name suppliers, pd.product_name,
 pd.unit_price, pd.product_id
@@ -31,3 +41,5 @@ FROM "northwind"."public"."orders" ord
 )
 
 SELECT * FROM finaljoin
+  );
+  
