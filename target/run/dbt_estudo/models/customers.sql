@@ -8,7 +8,8 @@
     
     
   as (
-    WITH markup AS (
+    -- customers code
+WITH markup AS (
     SELECT *,
            first_value(customer_id) 
            OVER (PARTITION BY company_name, contact_name 

@@ -1,3 +1,4 @@
+-- customers code
 WITH markup AS (
     SELECT *,
            first_value(customer_id) 
