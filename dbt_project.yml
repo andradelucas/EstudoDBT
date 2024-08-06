@@ -6,6 +6,9 @@ clean-targets:
   - 'target'
   - 'dbt_modules'
 
+vars:
+  category: Seafood
+
 models:
   dbt_estudo:
     +materialized: table

@@ -1,0 +1,12 @@
+
+    
+    
+    truncate table "northwind"."dbt_landradeesilva"."shippers_emails";
+    -- dbt seed --
+    
+          insert into "northwind"."dbt_landradeesilva"."shippers_emails" ("shippers_id", " shipper_email") values
+          (%s,%s),(%s,%s),(%s,%s)
+      
+
+;
+  
