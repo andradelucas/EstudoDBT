@@ -9,3 +9,4 @@ clean-targets:
 models:
   dbt_estudo:
     +materialized: table
+#    +schema: "{{ target.schema }}"  # Garantir que isso seja substituído pelo valor do schema

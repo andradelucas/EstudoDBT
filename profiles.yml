@@ -1,5 +1,15 @@
 default:
   outputs:
+    prod:
+      type: redshift
+      host: default-workgroup.010928215067.us-east-1.redshift-serverless.amazonaws.com
+      user: admin
+      password: Lu122650paulo
+      port: 5439
+      dbname: northwind
+      schema: prod  # Schema 'prod' deve ser usado
+      threads: 3
+
     dev:
       type: redshift
       host: default-workgroup.010928215067.us-east-1.redshift-serverless.amazonaws.com
@@ -10,24 +20,4 @@ default:
       schema: public
       threads: 3
 
-    test:
-      type: redshift
-      host: default-workgroup.010928215067.us-east-1.redshift-serverless.amazonaws.com
-      user: admin
-      password: Lu122650paulo
-      port: 5439
-      dbname: northwind
-      schema: test  # Alterar o schema para test
-      threads: 3
-
-    prod:
-      type: redshift
-      host: default-workgroup.010928215067.us-east-1.redshift-serverless.amazonaws.com
-      user: admin
-      password: Lu122650paulo
-      port: 5439
-      dbname: northwind
-      schema: prod  # Alterar o schema para prod
-      threads: 3
-
-  target: dev  # O ambiente padrão permanece dev
+  target: prod  # Define o target padrão como 'prod'
