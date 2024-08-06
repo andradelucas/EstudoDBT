@@ -24,7 +24,7 @@
         'admin',
         'default',
         FALSE,
-        '8f57580d-28f0-4ab7-9372-523c0f8bbcca'
+        'a98fdc96-5504-4601-83e6-3e1cf5eb5c36'
     );
 
     commit;

@@ -1,6 +1,6 @@
 SELECT 
     sh.company_name, 
-    se.shipper_email 
+    se.* 
 FROM
     {{ source('sources', 'shippers') }} sh
 LEFT JOIN 

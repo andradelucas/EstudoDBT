@@ -10,7 +10,7 @@
   as (
     SELECT 
     sh.company_name, 
-    se.shipper_email 
+    se.* 
 FROM
     "northwind"."public"."shippers" sh
 LEFT JOIN 
